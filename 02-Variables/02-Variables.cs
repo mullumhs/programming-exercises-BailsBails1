@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Net.Mime.MediaTypeNames;
 
 /*
 ===============================================================================
@@ -13,8 +14,8 @@ Main Tasks:
 3. Make the program wait for input.
 
 Questions:
-1. What is a variable?
-2. What is a string?
+1. What is a variable? a thing that changes when you put something in it
+2. What is a string? a thing a variable uses.
 
 Extension Tasks:
 1. Try creating two string variables and using them in the same message.
@@ -34,11 +35,23 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code goes below here
-            
+            string Name = "BailsBails";
+            Console.WriteLine("Hello " + Name);
+            Console.WriteLine();
+            Console.WriteLine("press Enter to continue");
+            Console.ReadLine();
+            Console.Beep(500,800);
+            Console.ReadLine() ;
 
-        }
-    }
-}
+           
+            
+        
+        
+
+
+    
+    
+
 
 /*
 ===============================================================================
