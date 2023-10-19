@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.Remoting.Channels;
 
 /*
 ===============================================================================
@@ -44,6 +45,9 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code goes below here
+            int year = 2001;
+            string place = "WorldTradeCentre";
+            string state = "absoluteyobliterated";
 
         }
     }

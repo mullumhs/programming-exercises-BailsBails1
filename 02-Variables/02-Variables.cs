@@ -37,7 +37,7 @@ namespace ProgrammingExercisesIST
             // Your code goes below here
             string Name = "BailsBails";
             Console.WriteLine("Hello " + Name);
-            Console.WriteLine();
+           Console.ReadLine();
             Console.WriteLine("press Enter to continue");
             Console.ReadLine();
             Console.Beep(500,800);
