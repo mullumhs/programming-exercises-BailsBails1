@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 
 /*
 ===============================================================================
@@ -54,9 +55,31 @@ namespace ProgrammingExercisesIST
 
             // Your code goes below here
 
+            {
+                if (mark >= 50)
+                { Console.WriteLine("you passed"); }
+
+                else if (mark < 50 && mark > 40)
+                { Console.WriteLine("its ok try again next time"); }
+
+                else if (mark < 40 && mark > 20)
+                { Console.WriteLine("you are a failure"); }
+                
+                else if ( mark <20)
+                { Console.WriteLine(" YOU HAVE NO USE IN LIFE YOU WASTE OF AIR, YOU DUMBO"); }
+                Console.ReadLine();
+            }
         }
     }
 }
+
+
+
+            
+
+
+
+
 
 /*
 ===============================================================================
