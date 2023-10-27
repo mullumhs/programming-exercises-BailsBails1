@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics.Eventing.Reader;
+using System.Runtime.InteropServices;
 
 /*
 ===============================================================================
@@ -46,7 +48,20 @@ namespace ProgrammingExercisesIST
             Console.WriteLine("Pick a Door: 1, 2 or 3");
 
             // Your code goes below here
+            int door = Convert.ToInt32(Console.ReadLine());
+            if (door == 1) 
+            { 
+                Console.WriteLine("you lose.");
+            } 
+            
 
+            else if (door == 2) { Console.WriteLine("you win $24.50 "); }
+           
+            else if (door == 3) { Console.WriteLine("you win a lambo"); }
+
+           else { Console.WriteLine("please pick a number between 1 and 3"); }
+
+            Console.ReadLine();
         }
     }
 }
