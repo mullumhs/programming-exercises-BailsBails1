@@ -51,6 +51,29 @@ namespace ProgrammingExercisesIST
         {
             // Your code goes below here
 
+            Console.WriteLine("area of a rectangle calculator");
+            
+            Console.WriteLine("please enter the units");
+            string units = Console.ReadLine();
+
+            Console.WriteLine("please enter the length of the rectangle");
+            double length = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("please enter the width of the rectangle");
+            double width = Convert.ToDouble(Console.ReadLine());
+
+
+            Console.WriteLine($"your answer is {length * width} {units} squared");
+
+            
+
+            Console.WriteLine();
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadKey();
+
+
+
+
         }
     }
 }
