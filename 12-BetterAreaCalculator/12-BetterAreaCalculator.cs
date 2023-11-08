@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 
 /*
 ===============================================================================
@@ -49,10 +50,66 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code goes below here
+                
+            Console.WriteLine("area of a rectangle calculator");
+
+                showmenu();
+
+            Console.WriteLine("please enter the length of the rectangle");
+            double length = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("please enter the width of the rectangle");
+            double width = Convert.ToDouble(Console.ReadLine());
+
+
+            Console.WriteLine($"your answer is {length * width} {units} squared");
+            showexit();
+
+
+
+           
+        }
+
+        private static void showmenu()
+        {
+            Console.WriteLine("area of a rectangle calculator");
+
+            Console.WriteLine("please enter the units");
+            string units = Console.ReadLine();
+        }
+        private static void showmain() 
+        {
+            Console.WriteLine("please enter the length of the rectangle");
+            double length = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("please enter the width of the rectangle");
+            double width = Convert.ToDouble(Console.ReadLine());
+
+
+            
+
 
         }
+
+        private static void showexit() 
+        {
+            Console.WriteLine();
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadKey();
+
+        }
+
     }
+
 }
+
+
+
+
+
+
+
+
 
 /*
 ===============================================================================
