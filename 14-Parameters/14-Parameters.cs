@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 
 /*
 ===============================================================================
@@ -47,11 +48,46 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Call the methods here, passing in the required arguments
+            Console.WriteLine("please enter name");
+            string name = Console.ReadLine();
+            helloname(name);
 
+            
+
+
+            
+            subtractnumbers();
+            exit();
         }
 
         // Write your methods including parameters here
 
+        static void helloname(string name) 
+        {
+            Console.WriteLine($"hello {name}");
+            Console.ReadLine();
+        }
+
+        static void subtractnumbers() 
+        {
+
+            Console.WriteLine("Please enter a number for X:");
+            double x = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Please enter a number for y:");
+            double y = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine($"{x} minus {y} = {x - y}");
+            Console.ReadLine();
+        }
+
+        static void exit() 
+        {
+         Console.WriteLine("press any key to exit");
+            Console.ReadKey();
+
+        
+        }
     }
 }
 
