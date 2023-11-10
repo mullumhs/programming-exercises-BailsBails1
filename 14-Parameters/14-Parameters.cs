@@ -74,6 +74,7 @@ namespace ProgrammingExercisesIST
             Console.WriteLine("Please enter a number for X:");
             double x = Convert.ToDouble(Console.ReadLine());
 
+
             Console.WriteLine("Please enter a number for y:");
             double y = Convert.ToDouble(Console.ReadLine());
 
