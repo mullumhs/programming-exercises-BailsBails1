@@ -68,15 +68,20 @@ namespace ProgrammingExercisesIST
             int y = GetNumber();
 
             // Write your code here
-
             
-
+            int answer = multiplynumbers(x,y);
+            Console.WriteLine("your answer is");
+            Console.Write(answer);
             // "Exit" method is called here
             Exit();
         }
 
         // Create your functions here
-
+        static int multiplynumbers( int num1, int num2)
+        {
+            int answer = num1 * num2;
+            return answer;
+        }
 
 
         // This is a function I have written to get a number from the user
