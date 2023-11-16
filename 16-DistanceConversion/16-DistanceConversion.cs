@@ -50,6 +50,24 @@ namespace ProgrammingExercisesIST
             string choice = MainMenu();
 
             // Write your code here
+            if (choice =="1")
+            {
+
+                double miles = convertkmtomiles();
+                Console.WriteLine($"{miles} miles ");
+            }
+
+            else if (choice == "2")
+            {
+
+                double km = Convertmilestokm();
+                Console.WriteLine($" {km} Km");
+            }
+
+            
+            
+                
+            
 
 
             // Wait for key press before exiting
@@ -58,6 +76,20 @@ namespace ProgrammingExercisesIST
 
         // Create your functions here
 
+         static double convertkmtomiles()
+        {
+            double km = GetDistance("km");
+            double miles = (km / 1.6);
+            return miles;
+
+        }
+
+        static double Convertmilestokm() 
+        {
+            double miles = GetDistance("miles");
+            double km = (miles * 1.6);
+            return km;
+        }
 
 
         // Asks the user to enter a distance in the unit specified
