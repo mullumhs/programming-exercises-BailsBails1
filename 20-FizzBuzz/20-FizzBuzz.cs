@@ -49,6 +49,32 @@ namespace ProgrammingExercisesIST
         static void FizzBuzz()
         {
             // Write your code here
+            for (int i = 0; i < 101; i++)
+            {
+                if (i % 3 == 0)
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("fizz");
+                }
+                else if (i % 5 == 0) 
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("buzz");
+                 
+                }
+
+                else if (i % 15 == 0) 
+                {
+                 Console.ForegroundColor= ConsoleColor.Yellow;
+                    Console.WriteLine("FizzBuzz");
+                }
+                else 
+                {
+                    
+                    Console.WriteLine(i);
+                } 
+
+            }
 
         }
 
