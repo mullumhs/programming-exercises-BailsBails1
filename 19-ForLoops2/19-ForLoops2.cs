@@ -59,11 +59,41 @@ namespace ProgrammingExercisesIST
         {
             WaitBetween("Loop to find the number 42:");
 
+            for (int i = 0; i < 100; i++)
+            {
+                
+
+                if (i == 42) 
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine(" 42 found it");
+
+                }
+
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine(i);
+                }
+            }
 
 
             WaitBetween("Loop to find numbers divisible by 2:");
 
+            for (int i = 100; i < 200; i+=3)
+            {
+                if (i % 2 == 0) 
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine(" divisible by 2");
+                }
+                else
+                {
+                    Console.ForegroundColor= ConsoleColor.Red;
+                    Console.WriteLine(i);
+                }
 
+            }
 
             // Wait at end
             WaitAtEnd();
